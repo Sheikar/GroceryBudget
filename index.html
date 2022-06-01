@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- ====== Start Css, Bootstrap Icons Links ======== -->
+  
+  <link href="./Assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./Assets/grocery.css">
+  
+  <!-- ====== End Css, Bootstrap Icons Links ======== -->
+  
+  <title>Grocery List</title>
+</head>
+
+<body>
+  
+  <!-- ====== Start Article ======== -->
+  
+  <article class="container">
+    
+    <!-- ====== Start Grocery ======== -->
+    
+    <section class="section-1">
+      <div class="alert">
+      
+      </div>
+      <h4 class="heading">Grocery List</h4>
+      <div class="underline"></div>
+      <form class="form" accept-charset="utf-8">
+        <input type="text" name="grocery" id="input" placeholder="e.g Milk" maxlength="7">
+        <button type="submit" class="submit-btn btn">Submit</button>
+      </form>
+      <div class="grocery-list">
+        <!--<div class="item">
+          <span>Item</span>
+          <div class="editors">
+            <span>
+              <i class="bi bi-pencil-square"></i>
+            </span>
+            <span>
+              <i class="bi bi-trash"></i>
+            </span>
+          </div>
+        </div> -->
+      </div>
+      <button class="clear-btn hide-clear-btn" type="button">
+      Clear List
+      </button>
+      <button type="button" class="btn checkout-btn">
+      Checkout
+      </button>
+    </section>
+    
+    <!-- ====== End Grocery ======== -->
+    
+    <!-- ====== Start Checkout ======== -->
+    
+    <section class="section-2 hide-checkout">
+      <h4 class="heading">checkout section</h4>
+      <div class="underline"></div>
+      <hr color="#BA7D21C9" width="100%">
+      <div id="titles">
+        <span>items</span>
+        <div>
+          <span class="title">price </span>
+          <span class="title">units </span>
+          <span class="title sub-total">subtotal </span>
+        </div>
+      </div>
+      <hr color="#BA7D21C9" width="100%">
+      <div class="checkout-items">
+        
+        
+      </div>
+      <div class="grand">
+        <span class="grand-title">Grand Total</span>
+        <input type="number" name="grand-total" id="grand-total" readonly>
+      </div>
+      
+      <button type="button" id="calc-total-btn">Calculate grand total</button>
+      
+      
+      <button type="button" class="back-btn">
+        Back
+      </button>
+      
+   
+    </section>
+    
+    <!-- ====== End Checkout ======== -->
+    
+  </article>
+  
+  <!-- ====== End Article ======== -->
+  
+  <!-- ====== Start Footer ======== -->
+  
+  <footer class="details">
+    
+    <div class="links">
+      <ul>
+        <li>
+          <a href="https://mobile.twitter.com/Hassan45316908" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sheikar" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hassan-shakur-4283ab232/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto: hassshaks1233@gmail.com" target="_blank">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      
+      
+    </div>
+    <div>
+      &copy; copyright <span class="year"></span><br>
+      <p>
+        Designer : Shaks Hassan
+      </p>
+    </div>
+  </footer>
+  
+  <!-- ====== End Footer ======== -->
+  
+  <!-- ====== Start JavaScr ======== -->
+  
+  <script src="./Assets/Grocery.js">Grocery.js</script>
+  
+  <!-- ====== End JavaScr ======== -->
+
+</body>
+
+</html>

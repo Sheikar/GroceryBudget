@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap');
+
+/* ==============================
+Generalized Styles
+================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background: rgba(218, 255, 255, 1);
+  text-transform: capitalize;
+  display: flex;
+  min-height: 100vh;
+  height: fit-content;
+  justify-content: center;
+  align-items: flex-start;
+  justify-items: center;
+  position: relative;
+  transition: all 1s ease-in-out;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  
+  
+}
+
+section {
+  width: 80vw;
+  min-height: 40vh;
+  margin: 30px;
+  background: whitesmoke;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 35rem;
+  border-radius: 7px;
+  margin-bottom: 6rem;
+  
+ 
+}
+
+.heading {
+  color: steelblue;
+  font-size: 18px;
+  font-weight: bolder;
+  
+}
+
+
+section > * {
+  margin: 10px;
+}
+
+.section-1, section-2 {
+  transition: all 1s ease-in-out;
+}
+
+div span {
+  padding-top: 3px;
+}
+
+.underline {
+  width: 3rem;
+  height: 0.15rem;
+  background: hsla(43, 100%, 50%, 1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+
+/* ==============================
+Grocery Input Styles
+================================== */
+
+.grocery-list {
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.item {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  color: #0014E6;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  
+}
+
+.alert {
+  width: 12rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.bi-pencil-square {
+  color: #0BB31D;
+}
+
+.bi-trash {
+  color: #f00;
+}
+
+form input {
+  background: rgba(218, 255, 255, 0.5);
+  border: 1.2px solid rgba(218, 255, 255, 1);
+  padding: 4px;
+  border-radius: 5px;
+}
+
+form input:focus,
+#price:focus, 
+#units:focus,
+#sub-t:focus,
+#grand-total
+ {
+  outline: none;
+  border-color: lightskyblue;
+}
+
+
+.item:hover, #titles:hover, .grand:hover {
+  background: rgba(0,0,0, 0.1);
+}
+
+/* ==============================
+Buttons Styles
+================================== */
+
+.btn {
+  color: white;
+  background: rgba(57, 70, 224, 0.7);
+  padding: 3px;
+  border-radius: 5px;
+  border: 1.3px solid #0B5B68
+}
+
+.clear-btn {
+  background: rgba(255,0,0, 0.2);
+  color: #f00;
+  border-radius: 5px;
+  border: none;
+  padding: 4px;
+  width: 5rem;
+  display: block;
+  
+}
+
+.checkout-btn {
+  width: 9rem;
+  height: 2rem;
+  background: transparent;
+  color: #000;
+}
+
+.checkout-btn:hover {
+  color: #fff;
+  background: rgba(26, 255, 0, 1);
+  border: none;
+  transition: all 0.5s linear;
+}
+
+.back-btn {
+  background: rgba(0,255,0, 0.2);
+  color: #1D00BE;
+  border-radius: 5px;
+  border: none;
+  padding: 4px;
+  width: 5rem;
+  display: block;
+}
+
+.back-btn:hover {
+  color: #fff;
+  background: green;
+}
+
+.clear-btn:hover {
+  background: red;
+  color: #fff;
+}
+
+.hide-btn {
+  display: none;
+}
+
+
+.btn:hover{
+  color: #000;
+}
+
+#calc-total-btn {
+  background: rgba(0,0,200, 0.2);
+  color: #081D1C;
+  border-radius: 7px;
+  border: none;
+  padding: 4px;
+  width: 8rem;
+  display: block;
+  text-transform: capitalize;
+}
+
+
+#calc-total-btn:hover {
+  background: rgba(0,0,200, 0.5);
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+
+/* ==============================
+Checkout Section Styles
+================================== */
+
+#titles {
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 3px;
+  padding-left: 5px;
+  color: #54B617;
+  border-radius: 4px;
+}
+
+.grand {
+  display: flex;
+  padding: 7px;
+  border-radius: 9px;
+}
+
+.title {
+  margin-left: 1.5rem;
+  font-size: 0.8rem;
+  
+}
+
+#price, #units, #sub-t, #grand-total {
+  width: 2.9rem;
+  border: 1.2px solid rgba(218, 255, 255, 1);
+  padding: 4px;
+  background: rgba(0,0,0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#sub-t {
+  width: 4.3rem;
+}
+
+#grand-total {
+  width: 7rem;
+  margin-left: 1.5rem;
+}
+
+.grand-title {
+  padding-top: 4px;
+  font-size: 1rem;
+  color: #0F73AF;
+}
+
+
+
+/* ==============================
+Dynamic Classes Styles
+================================== */
+
+
+.alert-danger {
+  color: #f00;
+  background: beige;
+}
+
+
+.alert-safe {
+  background: beige;
+  color: #3CB721;
+}
+
+.hide-grocery {
+  transform: translateX(-100vw);
+  transition: all 1s ease-in-out;
+}
+
+
+/* ==============================
+Links & Footer Styles
+================================== */
+
+a {
+  text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+ 
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.links ul li {
+  color: #fff;
+  border-radius: 50%;
+  background: #200DD473;
+  font-size: 10px;
+  display: inline-block;
+  line-height: 1;
+  padding: 5px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 22px;
+  height: 22px;
+  transition: 0.3s;
+  text-decoration-line: none;
+  
+}
+
+.links ul li:hover {
+  background: #200DD4E6;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+footer {
+  position: absolute;
+  line-height: 1.4;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+  font-size: 0.65rem;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0, 0.6);
+  margin-top: 20rem;
+}
+
+
+/* ==============================
+Screen Media Queries Response Styles
+================================== */
+
+
+@media (max-width: 480px){
+  .section-2, section-1 {
+   /* position: absolute;*/
+    transition: all 1s ease-in-out;
+  }
+  
+  .section-1 {
+    min-width: 85vw;
+  }
+  
+  .hide-checkout {
+    transform: translateX(100vw);
+    transition: all 1s ease-in-out;
+  
+ }
+ 
+ .display-checkout {
+    transform: translateX(-98vw);
+    transition: all 1s ease-in-out;
+  }
+  
+}
+
+
+@media (min-width: 480px){
+  section {
+    min-height: 30rem;
+    margin-bottom: 15rem;
+  }
+  
+  
+  .links ul li {
+    font-size: 18px;
+    padding: 8px 0;
+    margin-right: 4px;
+    width: 36px;
+    height: 36px;
+    
+  }
+  
+  footer {
+    height: 8rem;
+    padding: 14px;
+    line-height: 2;
+  }
+  
+  .links ul li {
+    margin-right: 20px;
+  }
+  
+  .display-checkout {
+    transform: translateX(-25vw);
+    transition: all 1s ease-in-out;
+  }
+}
+
