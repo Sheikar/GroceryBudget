@@ -1,3 +1,3 @@
 # GroceryBudget
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solutionhttps://github.com/Sheikar/GroceryBudget.git]()
+- Live Site URL: [Live site](https://sheikar.github.io/GroceryBudget/)
